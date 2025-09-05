@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Módulos de Gestión</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        h1, h2, h3 {
+            color: #333;
+        }
+        h1 {
+            text-align: center;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            background: #fff;
+            margin: 10px 0;
+            padding: 15px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+
+<h1>Módulos de Gestión</h1>
+
+<h2>1. Proveedores</h2>
+<ul>
+    <li><strong>Objetivo:</strong> Gestionar información de proveedores.</li>
+    <li><strong>Acciones:</strong> Registrar, leer, actualizar, borrar.</li>
+    <li><strong>Campos:</strong> Id_proveedor, primer_Nombre, segundo_nombre, ap_paterno, ap_materno, RFC, fecha_nacimiento, edad, pais, estado, municipio, colonia, calle, no_exterior, no_interior, teléfono, refaccion, precio_refaccion, cantidad_refaccion, tipo_entrega, tiempo_entrega, descripción_refaccion, no_serial_refaccion, sexo, nacionalidad, costo_total.</li>
+</ul>
+
+<h2>2. Personal</h2>
+<ul>
+    <li><strong>Objetivo:</strong> Manejar la información del personal.</li>
+    <li><strong>Acciones:</strong> Registrar, leer, actualizar, borrar.</li>
+    <li><strong>Campos:</strong> Id_personal, primer_nombre, segundo_nombre, ap_paterno, ap_materno, teléfono, direccion, sexo, fecha_nac, edad.</li>
+</ul>
+
+<h2>3. Catálogo</h2>
+<ul>
+    <li><strong>Objetivo:</strong> Gestionar los servicios y refacciones disponibles.</li>
+    <li><strong>Acciones:</strong> Registrar, leer, actualizar, borrar.</li>
+    <li><strong>Campos:</strong> Id_item, nombre_item, precio_item_unidad, tipo, existencia, cantidad, descripción, no_serial_refaccion.</li>
+</ul>
+
+<h2>4. Equipo</h2>
+<ul>
+    <li><strong>Objetivo:</strong> Información sobre equipos.</li>
+    <li><strong>Acciones:</strong> Registrar, leer, actualizar, borrar.</li>
+    <li><strong>Campos:</strong> Id_equipo, marca, modelo, color, tamaño, formato, fabricante_cpu, modelo_cpu, nomenclatura_cpu, fabricante_almacenamiento, tipo_almacenamiento, tamaño_almacenamiento, fabricante_ram, version_ram, velocidad_ram, fabricante_gpu, modelo_gpu, vram_gpu, resolución_pantalla, tipo_pantalla.</li>
+</ul>
+
+<h2>5. Clientes</h2>
+<ul>
+    <li><strong>Objetivo:</strong> Gestión de información de clientes.</li>
+    <li><strong>Acciones:</strong> Registrar, leer, actualizar, borrar.</li>
+    <li><strong>Campos:</strong> Id_cliente, primer_nombre, segundo_nombre, ap_paterno, ap_materno, teléfono, direccion, sexo, fecha_nac, edad.</li>
+</ul>
+
+<h2>6. Diagnóstico y Cotización</h2>
+<ul>
+    <li><strong>Objetivo:</strong> Manejar diagnósticos y presupuestos de servicios.</li>
+    <li><strong>Acciones:</strong> Registrar, leer, actualizar, borrar.</li>
+    <li><strong>Campos:</strong> Id_diagnostico, Id_orden_servicio, Id_personal, síntomas_reportados, pruebas_realizadas, hallazgos, diagnóstico_preliminar, id_item, total_cotizado, aprobado_por_cliente, fecha_aprobación, notas.</li>
+</ul>
+
+<h2>7. Órdenes de Servicio</h2>
+<ul>
+    <li><strong>Objetivo:</strong> Manejar las órdenes de servicio.</li>
+    <li><strong>Acciones:</strong> Registrar, leer, actualizar, borrar.</li>
+    <li><strong>Campos:</strong> Id_orden_servicio, Id_cliente, Id_equipo, fecha_recepción, accesorios_recibidos, estado_físico_inicial, prioridad, estatus, fecha_estimada_entrega, Id_diagnostico, garantía_aplica, Id_garantía, anticipo, saldo, id_personal, notas.</li>
+</ul>
+
+<h2>8. Pagos & Facturación</h2>
+<ul>
+    <li><strong>Objetivo:</strong> Gestión de pagos y facturas.</li>
+    <li><strong>Acciones:</strong> Registrar, leer, actualizar, borrar.</li>
+    <li><strong>Campos:</strong> Id_pago, Id_orden_servicios, Id_cliente, fecha_pago, método_pago, subtotal, descuento, total, estatus_pago, id_personal.</li>
+</ul>
+
+<h2>9. Ventas</h2>
+<ul>
+    <li><strong>Objetivo:</strong> Registrar ventas.</li>
+    <li><strong>Acciones:</strong> Registrar, leer, actualizar, borrar.</li>
+    <li><strong>Campos:</strong> Id_venta, fecha_venta, id_cliente, id_personal, descripción_venta, cantidad, total, id_pago, id_diagnostico, tipo.</li>
+</ul>
+
+<h2>10. Garantías</h2>
+<ul>
+    <li><strong>Objetivo:</strong> Gestionar garantías de servicios y productos.</li>
+    <li><strong>Acciones:</strong> Registrar, leer, actualizar, borrar.</li>
+    <li><strong>Campos:</strong> Id_garantía, Id_orden_servicio, tipo, Id_item, fecha_inicio, fecha_fin, condiciones, estatus, diagnóstico_garantía, resolución, id_personal, id_proveedor, numero_serial_refaccion, notas.</li>
+</ul>
+
+<h2>11. Análisis de Ventas</h2>
+<ul>
+    <li><strong>Objetivo:</strong> Proporcionar informes de ventas.</li>
+    <li><strong>Acciones:</strong> Leer, exportar, programar reportes.</li>
+    <li><strong>Campos:</strong> rango_fechas, ventas_totales, tickets_promedio, margen_bruto, top_items, top_clientes, ventas_por_canal, rotación_inventario, conversión_cotización→venta, tiempo_medio_reparación, tasa_devoluciones/garantías.</li>
+</ul>
+
+<h2>12. Marketing</h2>
+<ul>
+    <li><strong>Objetivo:</strong> Gestionar campañas de marketing.</li>
+    <li><strong>Acciones:</strong> Registrar, leer, actualizar, borrar.</li>
+    <li><strong>Campos:</strong> Id_campaña, nombre_campaña, canal, objetivo, fecha_inicio, fecha_fin, presupuesto, leads_generados, conversiones_a_venta, costo_por_lead, costo_por_conversión, ingresos_atribuidos, ROI, notas.</li>
+</ul>
+
+</body>
+</html>
