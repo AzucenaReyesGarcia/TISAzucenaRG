@@ -35,69 +35,6 @@
 
 <h1>Módulos de Gestión</h1>
 
-<h2>1. Proveedores</h2>
-<ul>
-    <li><strong>Objetivo:</strong> Gestionar información de proveedores.</li>
-    <li><strong>Acciones:</strong> Registrar, leer, actualizar, borrar.</li>
-    <li><strong>Campos:</strong> Id_proveedor, primer_Nombre, segundo_nombre, ap_paterno, ap_materno, RFC, fecha_nacimiento, edad, pais, estado, municipio, colonia, calle, no_exterior, no_interior, teléfono, refaccion, precio_refaccion, cantidad_refaccion, tipo_entrega, tiempo_entrega, descripción_refaccion, no_serial_refaccion, sexo, nacionalidad, costo_total.</li>
-</ul>
-
-<h2>2. Personal</h2>
-<ul>
-    <li><strong>Objetivo:</strong> Manejar la información del personal.</li>
-    <li><strong>Acciones:</strong> Registrar, leer, actualizar, borrar.</li>
-    <li><strong>Campos:</strong> Id_personal, primer_nombre, segundo_nombre, ap_paterno, ap_materno, teléfono, direccion, sexo, fecha_nac, edad.</li>
-</ul>
-
-<h2>3. Catálogo</h2>
-<ul>
-    <li><strong>Objetivo:</strong> Gestionar los servicios y refacciones disponibles.</li>
-    <li><strong>Acciones:</strong> Registrar, leer, actualizar, borrar.</li>
-    <li><strong>Campos:</strong> Id_item, nombre_item, precio_item_unidad, tipo, existencia, cantidad, descripción, no_serial_refaccion.</li>
-</ul>
-
-<h2>4. Equipo</h2>
-<ul>
-    <li><strong>Objetivo:</strong> Información sobre equipos.</li>
-    <li><strong>Acciones:</strong> Registrar, leer, actualizar, borrar.</li>
-    <li><strong>Campos:</strong> Id_equipo, marca, modelo, color, tamaño, formato, fabricante_cpu, modelo_cpu, nomenclatura_cpu, fabricante_almacenamiento, tipo_almacenamiento, tamaño_almacenamiento, fabricante_ram, version_ram, velocidad_ram, fabricante_gpu, modelo_gpu, vram_gpu, resolución_pantalla, tipo_pantalla.</li>
-</ul>
-
-<h2>5. Clientes</h2>
-<ul>
-    <li><strong>Objetivo:</strong> Gestión de información de clientes.</li>
-    <li><strong>Acciones:</strong> Registrar, leer, actualizar, borrar.</li>
-    <li><strong>Campos:</strong> Id_cliente, primer_nombre, segundo_nombre, ap_paterno, ap_materno, teléfono, direccion, sexo, fecha_nac, edad.</li>
-</ul>
-
-<h2>6. Diagnóstico y Cotización</h2>
-<ul>
-    <li><strong>Objetivo:</strong> Manejar diagnósticos y presupuestos de servicios.</li>
-    <li><strong>Acciones:</strong> Registrar, leer, actualizar, borrar.</li>
-    <li><strong>Campos:</strong> Id_diagnostico, Id_orden_servicio, Id_personal, síntomas_reportados, pruebas_realizadas, hallazgos, diagnóstico_preliminar, id_item, total_cotizado, aprobado_por_cliente, fecha_aprobación, notas.</li>
-</ul>
-
-<h2>7. Órdenes de Servicio</h2>
-<ul>
-    <li><strong>Objetivo:</strong> Manejar las órdenes de servicio.</li>
-    <li><strong>Acciones:</strong> Registrar, leer, actualizar, borrar.</li>
-    <li><strong>Campos:</strong> Id_orden_servicio, Id_cliente, Id_equipo, fecha_recepción, accesorios_recibidos, estado_físico_inicial, prioridad, estatus, fecha_estimada_entrega, Id_diagnostico, garantía_aplica, Id_garantía, anticipo, saldo, id_personal, notas.</li>
-</ul>
-
-<h2>8. Pagos & Facturación</h2>
-<ul>
-    <li><strong>Objetivo:</strong> Gestión de pagos y facturas.</li>
-    <li><strong>Acciones:</strong> Registrar, leer, actualizar, borrar.</li>
-    <li><strong>Campos:</strong> Id_pago, Id_orden_servicios, Id_cliente, fecha_pago, método_pago, subtotal, descuento, total, estatus_pago, id_personal.</li>
-</ul>
-
-<h2>9. Ventas</h2>
-<ul>
-    <li><strong>Objetivo:</strong> Registrar ventas.</li>
-    <li><strong>Acciones:</strong> Registrar, leer, actualizar, borrar.</li>
-    <li><strong>Campos:</strong> Id_venta, fecha_venta, id_cliente, id_personal, descripción_venta, cantidad, total, id_pago, id_diagnostico, tipo.</li>
-</ul>
-
 <h2>10. Garantías</h2>
 <ul>
     <li><strong>Objetivo:</strong> Gestionar garantías de servicios y productos.</li>
