@@ -29,6 +29,16 @@
             border-radius: 5px;
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         }
+        /* Estilo para los enlaces */
+        li a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+            display: block;
+        }
+        li a:hover {
+            color: #4CAF50;
+        }
         /* Estilo para botones */
         a button {
             padding: 8px 15px;
@@ -50,52 +60,37 @@
 </head>
 <body>
 
-<h2 id="indice">Índice</h2>
-  <ul>
-    <li><a href="#Garantías">Garantías</a></li>
-    <li><a href="#Análisis de Ventas">Análisis de Ventas</a></li>
-    <li><a href="#Marketing">Marketing</a></li>
-  </ul>
-
 <h1>Módulos de Gestión</h1>
 
-<h2>Sistema de gestión de pedidos.</h2>
-<a href="#indice"><button>Regresar</button></a>
+<h2>JLaboratories</h2>
 
 <h2>Problemática del Proyecto.</h2>
-<a href="#indice"><button>Regresar</button></a>
 
 <h2>Objetivo del proyecto.</h2>
-<a href="#indice"><button>Regresar</button></a>
+<p>
+Desarrollar un sistema de software de escritorio bajo una arquitectura cliente-servidor 
+para JLaboratories que permita digitalizar y optimizar el proceso de registro de clientes 
+y equipos, la gestión de reparaciones (urgentes y no urgentes), la generación de tickets 
+de órdenes, y el control eficiente de fechas de entrega mediante una interfaz intuitiva y 
+una base de datos.
+</p>
 
 <h2>Subsistema del proyecto.</h2>
-<a href="#indice"><button>Regresar </button></a>
 
 <img src="Imagenes/modulos.png" alt="Diagrama">
 
-<h2 id="Garantías">Garantías</h2>
-<a href="#indice"><button>Regresar</button></a>
+<!-- Lista de subsistemas movida debajo de la imagen -->
 <ul>
-    <li><strong>Objetivo:</strong> Gestionar garantías de servicios y productos.</li>
-    <li><strong>Acciones:</strong> <br>Registrar<br> leer<br> actualizar<br> borrar<br></li>
-    <li><strong>Campos:</strong> <br>Id_garantía <br> Id_orden_servicio<br> tipo<br> Id_item<br> fecha_inicio<br> fecha_fin<br> condiciones<br> estatus<br> diagnóstico_garantía<br> resolución<br> id_personal<br> id_proveedor<br> numero_serial_refaccion<br> notas<br></li>
+    <li><a href="./Subsistemas/clientes.html">Clientes</a></li>
+    <li><a href="./Subsistemas/pedidos.html">Pedidos</a></li>
+    <li><a href="./Subsistemas/inventario.html">Inventario</a></li>
+    <li><a href="./Subsistemas/ventas.html">Ventas</a></li>
+    <li><a href="./Subsistemas/catalogo.html">Catálogo</a></li>
+    <li><a href="./Subsistemas/entregas.html">Entregas</a></li>
+    <li><a href="./Subsistemas/marketing.html">Marketing</a></li>
+    <li><a href="./Subsistemas/personal.html">Personal</a></li>
+    <li><a href="./Subsistemas/proveedores.html">Proveedores</a></li>
 </ul>
-
-<h2 id="Análisis de Ventas">Análisis de Ventas</h2>
-<a href="#indice"><button>Regresar</button></a>
-<ul>
-    <li><strong>Objetivo:</strong> Proporcionar informes de ventas.</li>
-    <li><strong>Acciones:</strong> <br>Leer<br>exportar<br> programar reportes<br></li>
-    <li><strong>Campos:</strong><br> rango_fechas<br> ventas_totales<br> tickets_promedio<br> margen_bruto<br> top_items<br> top_clientes<br> ventas_por_canal<br> rotación_inventario<br> conversión_cotización→venta<br> tiempo_medio_reparación<br> tasa_devoluciones/garantías<br></li>
-</ul>
-
-<h2 id="Marketing">Marketing</h2>
-<a href="#indice"><button>Regresar</button></a>
-<ul>
-    <li><strong>Objetivo:</strong> Gestionar campañas de marketing.</li>
-    <li><strong>Acciones:</strong><br> Registrar<br>leer<br> actualizar<br> borrar<br></li>
-    <li><strong>Campos:</strong> <br>Id_campaña<br> nombre_campaña<br> canal<br> objetivo<br> fecha_inicio<br> fecha_fin<br> presupuesto<br> leads_generados<br> conversiones_a_venta<br> costo_por_lead<br> costo_por_conversión<br> ingresos_atribuidos<br> ROI<br> notas<br></li>
-</ul>
-
+<h2>Integrantes dl equipo</h2>
 </body>
 </html>
